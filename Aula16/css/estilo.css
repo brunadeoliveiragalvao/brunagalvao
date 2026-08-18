@@ -1,0 +1,76 @@
+html, body{
+    height: 100%; /*define a altura de 100% da área de visualização*/
+    margin: 0; /*define a margem como 0 ou seja sem margens*/
+    color: #777; /*muda a cor do texto*/
+}
+.parallax1{
+    position: relative;
+    background-image: url(../img/img_parallax.jpg); /*defina a imagem de fundo*/
+    height: 100%; /*define a altura máxima*/
+    opacity: 0.65; /*define a transparência da imagem*/
+    background-attachment: fixed; /*fixa a imagem de fundo deixando os outros elementos rolarem por sobre a imagem*/
+    background-position: center; /*posiciona a imagem ao centro*/
+    background-repeat: no-repeat; /*não permite que a imagem fique se repetindo*/
+    background-size: cover; /*redimensiona a imagem de acordo com a tela mantendo a proporção*/
+}
+.caption{
+    position: absolute; /*posicionamento absoluto aceita a definição de onde a caixa deve ser posicionada e atua em conjunto com left, top, right, bottom*/
+    left: 0; /*define a posição em relação a margem esquerda*/
+    top: 50%; /*define a posição em relação ao topo*/
+    width: 100%; 
+    text-align: center; /*alinhamento ao centro*/
+    color: #000; 
+}
+.caption span.border{ /*essa definição diz ao navegador que será definido o texto(span.border) que está dentro do .caption*/
+    background-color: #111;
+    color: #fff;
+    padding: 18px; /*espaçamento entre o texto e o elemento*/ 
+    font-size: 25px; /*define o tamanho da fonte*/
+    letter-spacing: 10px; /*define espaçamento entre os itens*/
+}
+
+.parallax2{
+    position: relative;
+    background-image: url(../img/img_parallax2.jpg);
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3{
+    position: relative;
+    background-image: url(../img/img_parallax3.jpg);
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box1{
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;    
+}
+
+.box1 h3{
+    text-align: center;
+}
+
+.box2{
+    color:white;
+    background-color: #5f5454;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+/*Exercicio
+Crie um hotsite com efeito parallax sobre um tema do seu agrado. 
+Cada parallax deve conter uma imagem sobre o tema abordado e deve ter um link definido nos captions que explique melhor sobre o assunto.
+O site deve ter 6 parallax
+Ao final da pagina deve haver um rodapé com com os seguintes links um ao lado do outro Quem somos, Nossa Historia, Contato, Endereço, todos clicáveis que levem a página correspondente. A página de contato deve abrir o endereço de email como hyperlink. Já a página de endereço deve exiber o Endereço e a sua localização no GoogleMaps*/
